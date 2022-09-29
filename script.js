@@ -1,0 +1,30 @@
+const handleImageChange = (offset) => {
+	const activeSlide = document.querySelector("[data-active]");
+	const slides = [...document.querySelectorAll(".slide")];
+	const currentIndex = slides.indexOf(activeSlide);
+	let newIndex = currentIndex + offset;
+
+	if (newIndex < 0) newIndex = slides.length - 1;
+	if (newIndex >= slides.length) newIndex = 0;
+	console.log(slides);
+	slides[newIndex].dataset.active = true;
+	delete activeSlide.dataset.active;
+};
+
+const onNext = () => handleImageChange(1);
+const onPrev = () => handleImageChange(-1);
+
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+	modal.style.display = "block";
+};
+span.onclick = function () {
+	modal.style.display = "none";
+};
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+};

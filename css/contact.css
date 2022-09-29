@@ -1,0 +1,97 @@
+body {
+	font-family: "Edu QLD Beginner", cursive;
+}
+.nav-container {
+	background-color: #e4e8f4;
+	font-family: "Edu QLD Beginner", cursive;
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.button-top {
+	width: 113px;
+	height: 40px;
+	margin-right: 60px;
+	background-color: #adb5d3;
+	border: solid 1px #99a5cf;
+	border-radius: 0 20px 20px 0;
+	text-align: center;
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.search-top {
+	width: 140px;
+	height: 40px;
+	border: solid 1px white;
+	border-radius: 20px 0 0 20px;
+}
+.h-top {
+	margin-left: 50px;
+	margin-top: 80px;
+}
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	background-color: #adb5d3;
+	border: solid 1px #99a5cf;
+	color: white;
+	padding: 12px 20px;
+	margin: auto;
+	width: 300px;
+	margin-top: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+.form_container {
+	border-radius: 5px;
+	background-color: #e4e8f4;
+	padding: 30px;
+	margin-top: 20px;
+}
+
+.col-9 {
+	float: left;
+	width: 75%;
+	margin-top: 10px;
+	padding: 5px;
+	margin: auto;
+}
+#email {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	height: 50px;
+	padding: 12px;
+}
+
+.row:after {
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.col-3,
+	.col-9,
+	input[type="submit"] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+.form_h {
+	text-align: center;
+	margin-bottom: 25px;
+}
